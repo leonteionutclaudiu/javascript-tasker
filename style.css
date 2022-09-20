@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Palanquin", sans-serif !important;
+  background-color: #f8ecdd !important;
+}
+
+.header-logo {
+  background-color: #dfd4c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 32px;
+}
+
+#btnClear {
+  width: 100%;
+}
+
+#tasks {
+  font-size: 22px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+footer {
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 200px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  #newTask {
+    min-width: 100%;
+  }
+}

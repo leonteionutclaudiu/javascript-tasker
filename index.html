@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <title>Task list</title>
+  </head>
+  <body>
+    <div class="header-logo">
+      <h1 class="header">JavaScript Tasker</h1>
+      <i class="bi bi-card-checklist"></i>
+    </div>
+    <div class="container mt-3 w-50">
+      <div class="input-group">
+        <span class="input-group-text">Add New Task</span>
+        <input
+          id="newTask"
+          type="text"
+          class="form-control"
+          placeholder="Describe your task"
+        />
+        <button class="btn btn-primary" id="btnSubmit">Submit</button>
+      </div>
+      <p id="message"></p>
+      <div class="list-group-flush mt-3" id="tasks"></div>
+      <button class="btn btn-danger btn-block mt-3" id="btnClear">
+        Clear List
+      </button>
+    </div>
+
+    <footer>
+      <p>&copy; 2022 Leonte Ionut-Claudiu. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
